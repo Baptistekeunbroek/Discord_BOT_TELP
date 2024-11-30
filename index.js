@@ -63,7 +63,6 @@ client.on("guildMemberAdd", async (member) => {
     const collected = await dmChannel.awaitMessages({
       filter,
       max: 1,
-      time: 60000,
       errors: ["time"],
     });
 
