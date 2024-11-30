@@ -23,8 +23,8 @@ const messages = {
   es: "¡Bienvenido al servidor **${server}**! ¡Por favor comparte una captura de pantalla de tu juego mostrando tu nombre para asegurarte de que no eres un espía!",
   pt: "Bem-vindo ao servidor **${server}**! Por favor, compartilhe uma captura de tela do seu jogo mostrando seu nome para ter certeza de que você não é um espião!",
   zh_TW:
-    "歡迎來到伺服器 **{guildName}**！請分享一張顯示你名字的遊戲截圖，以確保你不是間諜！！",
-  it: "Benvenuto nel server **{guildName}**! Per favore, condividi uno screenshot del tuo gioco che mostra il tuo nome per essere sicuro che non sei una spia!!",
+    "歡迎來到伺服器 **{server}**！請分享一張顯示你名字的遊戲截圖，以確保你不是間諜！！",
+  it: "Benvenuto nel server **{server}**! Per favore, condividi uno screenshot del tuo gioco che mostra il tuo nome per essere sicuro che non sei una spia!!",
 };
 
 // Crée un serveur Express
