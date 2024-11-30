@@ -1,6 +1,7 @@
 require("dotenv").config();
-
+const express = require("express");
 const { Client, GatewayIntentBits } = require("discord.js");
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -25,6 +26,18 @@ const messages = {
     "歡迎來到伺服器 **{guildName}**！請分享一張顯示你名字的遊戲截圖，以確保你不是間諜！！",
   it: "Benvenuto nel server **{guildName}**! Per favore, condividi uno screenshot del tuo gioco che mostra il tuo nome per essere sicuro che non sei una spia!!",
 };
+
+// Crée un serveur Express
+const app = express();
+const port = process.env.PORT || 3000; // Utilise le port dynamique ou 3000 par défaut
+
+app.get("/", (req, res) => {
+  res.send("Bot is running!");
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}`);
